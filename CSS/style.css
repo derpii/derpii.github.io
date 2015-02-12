@@ -1,45 +1,49 @@
+
+/* Main Styles */
+
 body {
 	background: #fff url(images/pattern.png);
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	color: #34A0C7;
 }
 
-#nav h1 {
-	font-family: Lucida Console;
-	font-size: 4em;
-	margin-bottom: 15px;
-	font-weight: 300;
-}
-
-#nav h3 {
-	font-family: Lucida Console;
-	font-size: 2em;
-	margin: -20px 0 0 0;
-	font-weight: 300;
-}
-
+	
 #nav ul {
+	margin: 0 0 0 0;
+	display: block;
+	background: rgba(0, 0, 250, .4);
 	border-bottom: 1px solid #000;
-	padding: 0 0 25px 0;
-	text-align: right;
+	padding: 5px 0 5px 0;
+	text-align: center;
 }
 
 #nav li {
+	font-size: .8em;
+	font-weight: 800;
 	display: inline;
-	margin: 15px 15px 0 0;
+	margin: 0px 15px 0 0;
 }
 
+/* adds ' | ' to an li with an li after it */
+#nav li + li:before {
+	color: #000000;
+	content: "|";
+	padding-right: 25px;
+}
+
+
 #nav a {
-	color : #00678D;
-	font-family: Helvetica, sans-serif;
+	text-transform: uppercase;
+	color : #FFFFFF;
+	font-family: Lucida Console, sans-serif;
 	text-decoration: none;
-	font-size: 1.1em;
+	font-size: 1.0em;
 }
 
 
 #nav a:visited {
-	color: #00678D;
+
 }
 
 p {
@@ -55,30 +59,38 @@ p {
 }
 
 .footer {
+	color: #FFFFFF;
 	font-family: Helvetica, sans-serif;
 	font-size: .7em;
 	margin-top: 35px;
+	text-align: center;
+	border-bottom: 1px solid #000000;
+	border-top: 1px solid #000000;
+	padding: 10px 0 10px 0;
+	background: rgba(0, 0, 250, .4);
 }
 
 .info {
+	font-family: Lucida console;
+	margin: 0 auto;
+	width: 80%;
 	border: 1px solid #000;
-	border-radius: 25px 25px 5px 5px;
+	border-radius: 10px;
 	padding: 10px 15px 0 15px;
+	line-height: 20px;
+	
 }
 
-.info li {
-	list-style: none;
-	font-family: Lucida Console;
-	font-size: 1em;
-	line-height: 25px;
-}
-
-.info li a {
-	color: #08A9E4;
+.info a {
+	color: #B75CD6;
+	font-weight: 800;
 	text-decoration: none;
-	font-weight: 700;
 }
 
-.hover {
-	color: #FFFFFF;
+.info ul {
+	list-style: none;
+}
+
+.info .article-title {
+	font-weight: 800;
 }
